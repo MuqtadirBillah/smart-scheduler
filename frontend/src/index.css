@@ -1,0 +1,453 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 !important;
+  background: radial-gradient(circle, rgb(34, 87, 110) 0%, rgb(18, 46, 58) 35%, rgb(0, 0, 0) 100%);
+  min-height: 100vh;
+}
+body input, body select, body textarea, body button:focus {
+  outline: 0;
+  outline: none;
+}
+body .mainSectionHeading {
+  font-weight: 600;
+  font-size: 30px;
+  color: #22576e;
+}
+body .subSectionHeading {
+  font-weight: 600;
+  font-size: 45px;
+}
+body .separator {
+  height: 2px;
+  padding: 0 !important;
+  background-color: #22576e;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .hide {
+  display: none !important;
+}
+body .deleteBut {
+  background-color: red;
+  border: 0;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .deleteBut:hover {
+  background-color: rgb(203, 0, 0);
+}
+body .editBut {
+  background-color: #22576e;
+  border: 0;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+body .editBut:hover {
+  background-color: #122E3A;
+}
+body .mainButton {
+  background-color: #22576e;
+  color: white;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: large;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .mainButton:hover {
+  background-color: #122E3A;
+}
+body .mainBut {
+  background-color: #22576e;
+  color: white;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 3px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .mainBut:hover {
+  background-color: #122E3A;
+}
+body .mainTablet {
+  background-color: rgb(117, 117, 117);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+body .mainTablet .sidePanel {
+  background-color: rgb(201, 201, 201);
+  border-radius: 20px 0 0 20px;
+  height: 80vh;
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body .mainTablet .sidePanel .userLabel {
+  background-color: white;
+  margin-top: 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+body .mainTablet .sidePanel::-webkit-scrollbar {
+  display: none;
+}
+body .mainTablet .mainPanel {
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+  height: 80vh;
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+body .mainTablet .mainPanel::-webkit-scrollbar {
+  display: none;
+}
+body .logoutButton {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+body .logoutButton button {
+  width: 100%;
+  background-color: #363636;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .logoutButton button:hover {
+  background-color: #272727;
+}
+body .settingButton {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+body .settingButton button {
+  width: 100%;
+  background-color: white;
+  color: #272727;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .settingButton button:hover {
+  color: #22576e;
+}
+body .createProjectBut {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+body .createProjectBut button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .createProjectBut button:hover {
+  background-color: black;
+}
+body .projectList {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+body .projectList button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.405);
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+}
+body .projectList button:hover {
+  background-color: #22576e;
+  color: white;
+}
+body .projectList .active {
+  background-color: #22576e;
+  color: white;
+}
+body .projectList .active:hover {
+  background-color: #122E3A;
+  color: white;
+}
+body .createProject .form h5 {
+  margin-top: 5px;
+}
+body .createProject .form input, body .createProject .form textarea {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 5px 10px;
+}
+body .projectHeader {
+  font-size: larger;
+}
+body .projectHeader i {
+  color: #22576e;
+}
+body .projectHeader .deleteBut {
+  width: 100%;
+}
+body .projectHeader .mainBut {
+  color: white !important;
+  font-size: large;
+  font-weight: 800;
+}
+body .taskList .singleTask {
+  color: white;
+  background: radial-gradient(circle, rgb(116, 136, 144) 0%, rgb(100, 123, 134) 35%, rgb(76, 95, 105) 100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+body .taskList .singleTask .deleteBut {
+  padding: 2px 5px !important;
+  font-size: smaller;
+}
+body .taskList .singleTask .deleteBut i {
+  font-size: smaller !important;
+}
+body .taskList .singleTask select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid rgba(255, 252, 252, 0.6);
+  border-radius: 2px !important;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+body .taskList .singleTask .dropdown .dropdown-toggle {
+  text-align: left;
+  background-color: white;
+  color: black;
+  border: 0;
+}
+body .taskList .singleTask .dropdown .dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+body .taskList .singleTask .dropdown .dropdown-toggle:hover {
+  background-color: rgb(235, 235, 235) !important;
+}
+body .taskList .singleTask .dropdown .reopen {
+  background-color: red !important;
+  color: white;
+}
+body .taskList .singleTask .dropdown .reopen:hover {
+  background-color: rgb(194, 0, 0) !important;
+}
+body .taskList .singleTask .dropdown .complete {
+  background-color: rgb(0, 197, 3) !important;
+  color: white;
+}
+body .taskList .singleTask .dropdown .complete:hover {
+  background-color: rgb(17, 152, 2) !important;
+}
+body .taskList .singleTask .dropdown .dropdown-item:hover {
+  cursor: pointer;
+}
+body .createTaskComp h6 {
+  margin-top: 15px;
+}
+body .createTaskComp input {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+}
+body .login {
+  background-color: white;
+}
+body .login .container-fluid {
+  min-height: 100vh;
+  position: relative;
+}
+body .login .container-fluid .homeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .login .container-fluid .homeIcon i {
+  font-size: xx-large;
+  color: #22576e;
+}
+body .login .container-fluid .homeIcon:hover i {
+  color: #122E3A;
+}
+body .login .container-fluid .row .leftt {
+  background-color: white;
+  background-color: #122E3A;
+  padding: 0 !important;
+}
+body .login .container-fluid .row .leftt img {
+  width: 100%;
+  height: 100vh;
+}
+body .login .container-fluid .row .rightt {
+  background-color: white;
+  text-align: center;
+}
+body .login .container-fluid .row .rightt img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+body .login .container-fluid .row .rightt .form {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+body .login .container-fluid .row .rightt .form input, body .login .container-fluid .row .rightt .form select {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+body .login .container-fluid .row .rightt .form .passwordCol {
+  position: relative;
+}
+body .login .container-fluid .row .rightt .form .passwordCol span {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+}
+body .login .container-fluid .row .rightt .form a {
+  text-decoration: none;
+  color: #22576e;
+}
+body .login .container-fluid .row .rightt .form a:hover {
+  color: #122E3A;
+}
+body .login .container-fluid .row .rightt .form button {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 0;
+  background-color: #22576e;
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .login .container-fluid .row .rightt .form button:hover {
+  background-color: #122E3A;
+}
+body .login .container-fluid .row .rightt .form .createBut {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 0;
+  background-color: white;
+  border: 1px solid #22576e;
+  color: #22576e;
+  font-size: larger;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+body .login .container-fluid .row .rightt .form .createBut:hover {
+  background-color: #22576e;
+  color: white;
+}
+body .home {
+  min-height: 100vh;
+}
+body .project {
+  min-height: 100vh;
+}
+body .createProjectPage {
+  min-height: 100vh;
+}
+@media only screen and (max-width: 992px) {
+  .login .container-fluid {
+    height: 100vh;
+  }
+  .login .container-fluid .row .leftt {
+    display: none !important;
+  }
+  .login .container-fluid .row .rightt {
+    padding-top: 50px;
+  }
+  .login .container-fluid .row .rightt .form {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=index.css.map */
