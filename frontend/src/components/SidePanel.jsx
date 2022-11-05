@@ -46,7 +46,8 @@ function SidePanel(props){
                 <div className="headers">
                     <div className="userLabel row">
                         <div className="col-2">
-                            <Avatar sx={{ boxShadow: `2px 2px 10px 1px rgba(0,0,0,0.3)`, bgcolor: `#${Math.floor(Math.random() * 0xFFFFFF).toString(16)}` }}>{user?.email[0]}</Avatar>
+                            <Avatar sx={{ boxShadow: `2px 2px 10px 1px rgba(0,0,0,0.3)`, bgcolor: `#122E3A` }}>{user?.email[0]}</Avatar>
+                            {/* <Avatar sx={{ boxShadow: `2px 2px 10px 1px rgba(0,0,0,0.3)`, bgcolor: `#${Math.floor(Math.random() * 0xFFFFFF).toString(16)}` }}>{user?.email[0]}</Avatar> */}
                         </div>
                         <div className="col-10 align-self-center">
                             {user?.email.split("@")[0]}
