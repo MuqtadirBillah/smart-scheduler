@@ -38,24 +38,21 @@ function ProjectHeader(props){
         <div className="projectHeader">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-7">
+                    <div className="col-lg-8 col-sm-12">
                         <h4>
                             {project?.name}
                         </h4>
                     </div>
-                    <div className="col-1">
+                    {/* <div className="col-lg-1 col-sm-12">
                         <h4>
                             <i className="fas fa-cog"></i>
                         </h4>
-                    </div>
-                    <div className="col-2">
+                    </div> */}
+                    <div className="col-lg-2 col-md-6 col-sm-6 col-6">
                         <CreateTaskComp project_id={props.project_id} detectChange={props.detectChange}/>
-                        <button className="mainBut" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        +
-                        </button>
                         {/* <button className="mainBut">+</button> */}
                     </div>
-                    <div className="col-2">
+                    <div className="col-lg-2 col-md-6 col-sm-6 col-6">
                         <button className="deleteBut" onClick={ ()=> deleteProject() }>Delete</button>
                     </div>
                 </div>

@@ -2,7 +2,8 @@ const { createSlice } = require("@reduxjs/toolkit");
 
 const initialState = {
     value: {
-        baseUrl: 'http://localhost:5000'
+        // baseUrl: 'http://localhost:5000'
+        baseUrl: 'http://192.168.18.89:5000'
     }
 }
 

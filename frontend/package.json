@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.12",
     "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -14,12 +18,15 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-redux": "^8.0.4",
+    "react-responsive": "^9.0.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-toastify": "^9.0.8",
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
+    "sort-by": "^1.2.0",
+    "underscore": "^1.13.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

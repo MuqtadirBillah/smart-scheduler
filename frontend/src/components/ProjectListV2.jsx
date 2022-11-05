@@ -53,15 +53,14 @@ function ProjectListV2(){
                         {
                             projectsData?.data.map((p, { index })=>{
                                 return(
-                                    <Link to={`/project/${p._id}`}>
-                                        {
-                                            <div className="singleProject">
-                                                <h3>{p.name}</h3>
-                                                <h5>{p.description}</h5>
-                                                <p>{` Created at: ${p.creation_date.split(" ")[0]} ${p.creation_date.split(" ")[1]} ${p.creation_date.split(" ")[2]} ${p.creation_date.split(" ")[3]}`}</p>
-                                            </div>
-                                        }
-                                    </Link>
+                                    <div className="singleProject">
+                                        <Link to={`/project/${p._id}`}>
+                                            <h4>{p.name}</h4>
+                                        </Link>
+                                        <p>{p.description}
+                                        <br />{` Created at: ${p.creation_date.split(" ")[0]} ${p.creation_date.split(" ")[1]} ${p.creation_date.split(" ")[2]} ${p.creation_date.split(" ")[3]}`}</p>
+                                        <hr />
+                                    </div>
                                 )
                             })
                         }

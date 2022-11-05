@@ -6,9 +6,15 @@ const mongooseConnection = require("./helpers/mongoose-connection");
 const appRoutes = require("./routes");
 const cron = require("./cron")
 
+const corsOptions = {
+    // origin: 'http://localhost:3000'
+    origin: '*'
+}
+
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
-app.use(cors());
+//add cors
+app.use(cors(corsOptions));
 
 app.use("/api", appRoutes);
 

@@ -12,6 +12,7 @@ import CreateProject from "../components/CreateProject";
 import TaskList from "../components/TaskList";
 import ProjectHeader from "../components/ProjectHeader";
 import SidePanel from "../components/SidePanel";
+import { useMediaQuery } from 'react-responsive'
 
 function Project(){
 
@@ -24,7 +25,10 @@ function Project(){
     const location = useLocation();
     let dispatch = useDispatch();
     let navigate = useNavigate();
-
+    
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' })
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
     useEffect(()=>{
         setProjectId(location.pathname.split('/')[2])
@@ -46,7 +50,8 @@ function Project(){
     }, [location]);
 
     return(
-        <div className={"project d-flex align-items-center "+display}>
+        // <div className={"project d-flex align-items-center "+display}>
+        <div className={`project ${ !isTabletOrMobile && 'd-flex align-items-center' } ${display}`}>
             <DynamicHead 
                 title="View Project"
                 description="Control you schedule!"

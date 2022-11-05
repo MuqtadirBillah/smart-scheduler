@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 const login = (req, res) =>{
+    console.log(req.body)
     User.findOne({ email: req.body.email }, function (err, docs) {
         if (err){
             console.log(err);
