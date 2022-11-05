@@ -5,6 +5,9 @@ import LogoutBut from './buttons/LogoutBut';
 import SettingBut from './buttons/SettingBut';
 import ProjectList from './ProjectList';
 import { useMediaQuery } from 'react-responsive'
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 
 function SidePanel(props){
 
@@ -41,8 +44,14 @@ function SidePanel(props){
             </div>
             <div className={"elements"+isTabletOrMobile && 'slideInDown'} style={{ display: `${display}` }}>
                 <div className="headers">
-                    <div className="userLabel">
-                        <i class="fas fa-user-check"></i> {user?.email}
+                    <div className="userLabel row">
+                        <div className="col-2">
+                            <Avatar sx={{ boxShadow: `2px 2px 10px 1px rgba(0,0,0,0.3)`, bgcolor: `#${Math.floor(Math.random() * 0xFFFFFF).toString(16)}` }}>{user?.email[0]}</Avatar>
+                        </div>
+                        <div className="col-10 align-self-center">
+                            {user?.email.split("@")[0]}
+                        </div>
+                        {/* <i class="fas fa-user-check"></i> {user?.email} */}
                     </div>
                 </div>
                 <div className="separator">

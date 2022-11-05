@@ -100,6 +100,7 @@ body .mainTablet {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
 }
 body .mainTablet .sidePanel {
+  text-transform: capitalize;
   background-color: rgb(201, 201, 201);
   border-radius: 20px 0 0 20px;
   height: 80vh;
@@ -111,9 +112,8 @@ body .mainTablet .sidePanel {
   padding-bottom: 15px;
 }
 body .mainTablet .sidePanel .userLabel {
-  background-color: white;
   margin-top: 0px;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 5px;
 }
 body .mainTablet .sidePanel::-webkit-scrollbar {
