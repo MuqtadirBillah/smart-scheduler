@@ -14,16 +14,20 @@ const getAllProjects = (req, res) =>{
 }
 
 const getProjectByUserId = (req, res) =>{
-    console.log(req.params)
-    Project.find({ user: req.params.id }).populate("user").exec((err, data)=>{
-        if(err){
-            console.log(err);
-            handleResponseWithStatus(res, 500, false, err, { status: "error", error: err });   
-        }
-        else{
-            handleResponseWithStatus(res, 200, true, "", { data: data, status: "success" });
-        }
-    })
+    if(req.params.id){
+        Project.find({ user: req.params.id }).populate("user").exec((err, data)=>{
+            if(err){
+                console.log(err);
+                handleResponseWithStatus(res, 500, false, err, { status: "error", error: err });   
+            }
+            else{
+                handleResponseWithStatus(res, 200, true, "", { data: data, status: "success" });
+            }
+        })
+    }
+    else{
+        handleResponseWithStatus(res, 500, false, 'Project Id was not found!', { status: "error", error: 'Project Id was not found!' }); 
+    }
 }
 
 const getProjectById = (req, res)=>{

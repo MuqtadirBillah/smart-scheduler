@@ -13,9 +13,9 @@ function ProjectHeader(props){
 
     useEffect(()=>{
         setProject(props.project);
+        console.log(props)
     } ,[props])
 
-    console.log(props)
 
     function deleteProject(){
         axios.delete(`${baseUrl}/api/project/delete/${props.project._id}`, {

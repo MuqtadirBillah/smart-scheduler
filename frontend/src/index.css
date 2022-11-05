@@ -210,6 +210,19 @@ body .projectList {
   margin-top: 10px;
   display: block;
 }
+body .projectList .allProjects a {
+  text-decoration: none !important;
+}
+body .projectList .allProjects a .singleProject {
+  color: black;
+}
+body .projectList .allProjects a .singleProject h3 {
+  color: rgb(2, 0, 136);
+  text-transform: capitalize;
+}
+body .projectList .allProjects a .singleProject h5 {
+  text-transform: capitalize;
+}
 body .projectList button {
   width: 100%;
   background-color: white;
@@ -220,6 +233,7 @@ body .projectList button {
   border-radius: 5px;
   padding: 10px 10px;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 body .projectList button:hover {
   background-color: #22576e;
@@ -228,6 +242,7 @@ body .projectList button:hover {
 body .projectList .active {
   background-color: #22576e;
   color: white;
+  text-transform: capitalize;
 }
 body .projectList .active:hover {
   background-color: #122E3A;

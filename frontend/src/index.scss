@@ -196,6 +196,21 @@ body{
         width: 100%;
         margin-top:10px;
         display: block;
+        .allProjects{
+            a{
+                text-decoration: none !important;
+                .singleProject{
+                    color: black;
+                    h3{
+                        color: rgb(2, 0, 136);
+                        text-transform: capitalize; 
+                    }
+                    h5{
+                        text-transform: capitalize; 
+                    }
+                }
+            }
+        }
         button{
             width: 100%;
             background-color: white;
@@ -206,6 +221,7 @@ body{
             border-radius: 5px;
             padding: 10px 10px;
             margin-bottom: 5px;
+            text-transform: capitalize; 
             &:hover{
                 background-color: $main-color;
                 color: white;
@@ -214,6 +230,7 @@ body{
         .active{
             background-color: $main-color;
             color:  white;
+            text-transform: capitalize; 
             &:hover{
                 background-color: $main-color-dark;
                 color: white;

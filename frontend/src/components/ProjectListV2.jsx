@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import Cookies from "js-cookie";
 
-function ProjectList(){
+function ProjectListV2(){
 
     let dispatch = useDispatch();
     const location = useLocation();
@@ -43,21 +43,33 @@ function ProjectList(){
 
     return(
         <div className="projectList">
-            {
-                projectsData?.data.map((p, { index })=>{
-                    return(
-                        <Link to={`/project/${p._id}`}>
-                            {
-                                (projectId==p._id) ? 
-                                <button className="active">{p.name}</button> :
-                                <button className="">{p.name}</button>
-                            }
-                        </Link>
-                    )
-                })
-            }
+            <div className="container">
+                <div className="headings">
+                    <h2 className='mainSectionHeading'>All Projects</h2>
+                    <hr />
+                </div>
+                <div className="row">
+                    <div className="allProjects">
+                        {
+                            projectsData?.data.map((p, { index })=>{
+                                return(
+                                    <Link to={`/project/${p._id}`}>
+                                        {
+                                            <div className="singleProject">
+                                                <h3>{p.name}</h3>
+                                                <h5>{p.description}</h5>
+                                                <p>{` Created at: ${p.creation_date.split(" ")[0]} ${p.creation_date.split(" ")[1]} ${p.creation_date.split(" ")[2]} ${p.creation_date.split(" ")[3]}`}</p>
+                                            </div>
+                                        }
+                                    </Link>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default ProjectList;
+export default ProjectListV2;

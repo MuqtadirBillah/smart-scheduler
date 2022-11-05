@@ -10,6 +10,7 @@ import ProjectList from "../components/ProjectList";
 import CreateProject from "../components/CreateProject";
 import CreateProjectBut from "../components/buttons/CreateProjectBut";
 import SidePanel from "../components/SidePanel";
+import ProjectListV2 from "../components/ProjectListV2";
 
 function Home(){
 
@@ -49,7 +50,8 @@ function Home(){
                         <SidePanel />
                     </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 mainPanel">
-                        <CreateProject />
+                        {/* <CreateProject /> */}
+                        <ProjectListV2 />
                     </div>
                 </div>
             </div>

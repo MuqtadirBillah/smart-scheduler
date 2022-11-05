@@ -43,11 +43,7 @@ function Project(){
             dispatch(setUser(null));
             navigate("/login");
         }
-    }, []);
-
-    useEffect(()=>{
-        setProjectId(location.pathname.split('/')[2])
-    }, [location])
+    }, [location]);
 
     return(
         <div className={"project d-flex align-items-center "+display}>
